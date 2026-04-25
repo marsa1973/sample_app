@@ -1,4 +1,40 @@
-# Codespaces ♥️ Railsチュートリアル
+# Ruby on Rails チュートリアルのサンプルアプリケーション
+
+これは、次の教材で作られたサンプルアプリケーションです。
+[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
+（第8版）
+[Michael Hartl](https://www.michaelhartl.com/) 著
+
+## ライセンス
+
+[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある
+ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。
+詳細は [LICENSE.md](LICENSE.md) をご覧ください。
+
+## 使い方
+
+このアプリケーションを動かす場合は、まずはリポジトリをフォークしてください。
+
+フォークしたリポジトリで、「Code」から「Codespaces」タブに移動し、
+「Create codespace on main」をクリックすると環境構築がスタートします。
+Railsサーバーが立ち上がり、シンプルブラウザが表示されるまでしばらくお待ちください。
+
+次に、データベースへのマイグレーションを実行します。
+
+```
+$ rails db:migrate
+```
+
+最後に、テストを実行してうまく動いているかどうか確認してください。
+
+```
+$ rails test
+```
+
+詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
+を参考にしてください。
+
+<!-- # Codespaces ♥️ Railsチュートリアル
 
 本リポジトリは[Railsチュートリアル](https://railstutorial.jp/)第8版に対応した [GitHub Codespaces](https://github.co.jp/features/codespaces) 用テンプレートです。2022年11月に公開された[GitHub公式のRailsテンプレート](https://github.com/github/codespaces-rails)を、[Railsチュートリアル](https://railstutorial.jp)用にカスタマイズしたものです。
 
@@ -107,4 +143,4 @@ Railsチュートリアル運営チーム<br>
 <small>
   ソースコードのライセンスは <a href='https://github.com/yasslab/codespaces-railstutorial/blob/main/LICENSE'>LICENSE</a> をご確認ください。<br>
   ロゴ画像やデモ動画などは各制作者の著作物となります。
-</small>
+</small> -->
