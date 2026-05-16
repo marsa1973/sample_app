@@ -1,0 +1,14 @@
+<%= @user.name %>, <%= @user.email %><br>
+ <!-- 7.1.2演習-->
+ <!-- <%= @user.created_at %>, <%= @user.updated_at %><br> -->
+ <!-- <%= Time.now %> -->
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user ,size: 50 %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+</div>

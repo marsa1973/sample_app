@@ -2,5 +2,6 @@
   "editor.minimap.enabled": false,
   "githubPullRequests.ignoredPullRequestBranches": [
     "main"
-  ]
+  ],
+  "remote.autoForwardPortsFallback": 0
 }

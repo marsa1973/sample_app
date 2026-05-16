@@ -1,4 +1,35 @@
 class UsersController < ApplicationController
-  def new
+
+  def show
+    @user = User.find(params[:id])
+    # 7.1.3演習
+    # debugger
   end
+  
+  def new
+    @user = User.new
+    # 7.1.3演習
+    # debugger
+  end
+
+  def create
+    # @user = User.new(params[:user])    # 実装は終わっていないことに注意!
+  @user = User.new(user_params)
+    if @user.save
+      flash[:success] = "Welcome to the Sample App!"
+      #redirect_to @user
+      #7.4.1演習
+      redirect_to user_url(@user)     
+    else
+      render 'new', status: :unprocessable_entity
+    end
+  end
+
+  private
+
+    def user_params
+      params.expect(user: [:name, :email, :password,
+                                  :password_confirmation])
+    end
+  
 end
