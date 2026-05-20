@@ -14,8 +14,10 @@ class UsersController < ApplicationController
 
   def create
     # @user = User.new(params[:user])    # 実装は終わっていないことに注意!
-  @user = User.new(user_params)
+    @user = User.new(user_params)
     if @user.save
+      reset_session
+      log_in @user      
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
       #7.4.1演習
